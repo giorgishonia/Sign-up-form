@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div>
+                <div class="gray-line"></div>
+                <div class="odin-png"></div>
+                <div class="odin-text"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+            <div class="form-box">
+                <form action="">
+                    <div>
+                    <label for="first name">first name</label>
+                    <input type="text" name="first name" id="first name" required>
+                    </div>
+                    <div class="right-input">
+<label for="last name">last name</label>
+                    <input type="text" name="last name" id="last name" required>
+                    </div>
+                    <div>
+  <label for="email">email</label>
+                    <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="right-input">
+                  <label for="phone number">phone number</label>
+                    <input type="tel" name="phone number" id="phone number" pattern="[0-9]{10}" required>
+                    </div>
+                    <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="right-input">            
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                      <input id="button" type="submit" value="Create Account">
+                      <p id="error-message" style="color: red; display: none;">Passwords do not match</p>
+                </form>
+            </div>
+        </div>  
+    </div>
+</body>
+<script>
+  function validateForm() {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirm-password").value;
+    var errorMessage = document.getElementById("error-message");
+
+    if (password !== confirmPassword) {
+      errorMessage.style.display = "block";
+      return false; // Prevent form submission
+    } else {
+      errorMessage.style.display = "none";
+      return true; // Allow form submission
+    }
+  }
+</script>
+</html>
