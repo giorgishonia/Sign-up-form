@@ -1,11 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 body {
     overflow: hidden;
 }
 
 @font-face {
-    font-family: Comfortaa;
-    src: url(./fonts/Comfortaa.ttf);
+    font-family: pixel;
+    src: url('https: //fonts.googleapis.com/css2?family=VT323&display=swap');
 }
+
 /* Hide scrollbar on all elements */
 *::-webkit-scrollbar {
     width: 0.1em;
@@ -21,76 +32,133 @@ body {
 
 .main{
     display: flex;
-    margin: -10px;
-
 }
 
 .left{
-    width: 35%;
+    width: 40%;
     height: 100vh;
-    border: 1px solid black;
-    background-image: url(./images/mori.jpg);
-    background-size: 100% 100%;
+    background-image: url(./images/6yts2uczrfua1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .right{
-    width: 65%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-}
-
-.form-box{
-    width: 100%;
-    height: 30%;
-    align-self: ;
-}
-
-#button{
-    width: 10rem;
-    height: 3rem;
-    margin-left: 50px;
-    font-size: medium;
-    position: absolute;
-    top: 190px;
+    width: 60%;
+    background-color: rgb(243, 243, 243);
 }
 
 .top-text{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
     margin-left: 50px;
-    font-size: 25px;
-    align-self: ;
-    
-
-}
-
-form{
-    display: grid;
-    grid-template-rows: 2fr auto;
-    /* Adjust the height of the first row as needed */
-    grid-template-columns: repeat(2, 200px);
-    gap: 40px;
-    font-family: Comfortaa;
+    margin-top: 50px;
     text-transform: uppercase;
-    font-size: 13px;
-    position: absolute;
-    top: 250px;
+    width: 85%;
+}
+
+p{
+    margin-left: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+        font-family: 'VT323', monospace;
+}
+
+.input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: .9rem;
     
+    height: 20px;
+    width: 200px;
 }
 
-input{
-    width: 300px;
-    margin-left: 50px;
-    position: relative;
-    top: 20px;
+form {
+    display: flex;
+    width: 60vw;
+    height: auto;
+    flex-flow: row wrap;
+    font-size: 1rem;
+    margin-left: 30px;
+    gap: 2rem;
 }
 
-label{
-    margin-left: 50px;
-    word-break: normal;
-    position: fixed;
+.input-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.2rem 2vw 3rem 2vw;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    margin-top: 50px;
 }
 
-.right-input{
-    margin-left: 100px;
+label {
+  position: relative;
+  width: 15rem;
+    margin-top: 20px;
+
+  text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+}
+
+.button{
+    background-color: #9B173F;
+    color: #05173D;
+    border: 1px solid #05173D;
+    border-style: groove;
+    height: 60px;
+    width: 160px;
+    margin-top: 90px;
+    margin-left: 60px;
+    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.642);
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    transition: 200ms;
+}
+
+.button:active{
+    box-shadow: none;
+    transition: 200ms;
+    transform: translateY(5px);
+    background-color: #870f33;
+}
+
+.log{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.credits{
+    position: absolute;
+    color: white;
+    font-family: 'VT323', monospace;
+    bottom: 0;
+}
+
+.guts{
+    position: absolute;
+    bottom: 0px;
+    width: 120px;
+    right: -15px;
+}
+
+.lets-text{
+        font-family: 'VT323', monospace;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-left: 27px;
+
+}
+
+.error{
+    position: absolute;
+    color: #9B173F;
+    font-size: 15px;
+    width: 220px;
+    margin-top: 5px;
+
 }

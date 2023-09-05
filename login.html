@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <audio autoplay="autoplay" controls id="audio">
+        <source src="./mp3/individual potential Mike Mentzer x VØJ x Narvent - Memory Reboot.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<style>
+    body{
+        background-image: url(./images/climber.jpeg);
+        background-size: cover;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#audio{
+    position: absolute;
+    top: 25%;
+    right: 40%;
+    background-color: black
+    ;
+    color: black;
+}
+
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: gray;
+     color: #000;
+     }
+body {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url('https: //fonts.googleapis.com/css2?family=VT323&display=swap');
+}
+
+/* Hide scrollbar on all elements */
+*::-webkit-scrollbar {
+    width: 0.1em;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.main{
+    display: flex;
+}
+</style>
+    <script>
+        window.onload=function(){
+            document.getElementById("audio").play();
+        }
+    </script>
+</html>
